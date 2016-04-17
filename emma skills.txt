@@ -1,0 +1,9 @@
+torment: mental ranged area telepath aspd;;0 0 732 8 8 0.5;9
+inspire: mental ranged area hellfire;;12774 19161 1901 10 30 0;20
+sig: mental area hellfire crit;;42057 63086 0 0 30 3;20
+telepathic mastery: hellfire passive;171 17.1 dmg, 518 15.8 chr, 963 24.3 cdr;;20
+diamond mind: diamond passive;540 54 def, 25 0 percent-def;;20
+show off: phys melee area diamond;216 21.6 def;6835 10253 0 0 8 0.5;20
+true queen: phys melee diamond;;5754 8631 0 0 4 0;20
+spin kick: phys melee aspd diamond;;3575 5363 858 8 8 0.769231;20
+diamond crush: phys melee area diamond aspd_period filler;;4471 6707 0 0 0.769231 0;20

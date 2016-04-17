@@ -1,0 +1,70 @@
+leg 1, relic 1, uru 1, ring 1, costume 1, insig 1, pet 1, synergy 10, universal 1, enchant-armor 1, enchant-weapon 1, arti 4, unique-1 1, unique-2 1, unique-3 1, unique-4 1, unique-5 1, medal 1, omega 1, stats 1
+excalibur, leg: 1500 dmg_melee, 1500 def, 750 chr
+#shield, leg: 1000 dmg, 2000 dodge, 2000 deflect, 2000 def, 4000 hp
+#axe, leg: 1400 dmg_phys, 700 chr, 700 bsr, 1400 bdr
+#power cosmic (2), leg: 1500 dmg, 1500 hp, 2 energy, 2 str, 2 int, 2 fight, 2 dur, 2 speed
+subterranea, relic: 1581 def, 1000 hp
+#atlantis, relic: 1107 cdr, 1000 hp
+power doop (def phys/mental), uru: 800 def, 577 def, 4777 bdr
+xavier, ring: 1 int, 1 fight, 294 chr, 294 bsr, 1466 hp, 200 dmg, 1 powers
+costume flat, costume: 3972 cdr, 200 dmg
+rasputin (def cdr), insig: 280 dmg_melee, 1470 def, 1071 cdr, 1 powers
+pet (def), pet: 5 percent-def, 50 spirit, 10 percent-brut-dmg, 3 fight, 2 powers_area
+ant-man, synergy: 1 str
+cable, synergy: 2 percent-crit
+elektra, synergy: 3 percent-dmg, 2 percent-dmg_phys
+#emma, synergy: 3 percent-dmg_dot, 1 dur
+#ghost rider, synergy: 4 percent-crit_mental
+luke cage, synergy: 2 percent-def, 2 percent-dmg_phys
+moon knight, synergy: 4 percent-crit_phys
+nightcrawler, synergy: 4 percent-dmg_melee
+#psylocke, synergy: 3 percent-dmg_phys, 3 percent-dmg_mental
+squirrel girl, synergy: 4 percent-dmg
+#winter soldier, synergy: 3 percent-dmg_melee, 3 percent-dmg_ranged
+war machine, synergy: 1 fight
+wolverine, synergy: 2 percent-brut, 5 percent-brut-dmg
+x-23, synergy: 4 percent-dmg
+static, universal: 12 percent-dmg, 10 percent-def, 5 fight, 20 percent-brut
+defense, enchant-armor: 600 def
+attack speed, enchant-weapon: 4 aspd
+#damage, enchant-weapon: 120 dmg
+red skull, medal: 1236 bdr, 2 dur, 2 str, 2 fight, 2 powers
+omega stats, omega: 18 dmg_phys, 6 chr_phys, 6 bsr_phys, 5 energy, 12 str, 60 bdr, 10 fight, 750 hp, 2130 def, 1 dur, 19 percent-dmg_melee, 1 aspd, 20 percent-def, 1260 dmg, 324 bsr, 324 chr, 300 dmg_melee, 300 dmg_ranged, 16 percent-dmg
+white silk gauntlets, unique-1: 1112 dmg, 418 def, 9.3 aspd, 375 chr, 375 bsr, 1619 cdr, 1 fight, 3 powers, 7 powers_diamond, 7 power-diamond-crush, 7 power-true-queen
+rebel's black bodice, unique-2: 609 dmg, 104 spirit, 3988 hp, 1 fight, 643 def, 8.6 aspd, 3 powers, 7 power-diamond-mind, 7 power-telepathic-mastery
+kiss of the viper, unique-3: 3589 hp, 3 dur, 1 fight, 479 dmg_melee, 479 dmg_ranged, 400 chr_melee, 400 chr_ranged, 1596 def, 3 powers
+dark x-men jacket, unique-3: 609 dmg, 1 dur, 3389 hp, 537 bsr, 1800 bdr, 1 fight, 6 percent-dmg, 3 powers, 7 power-inspire, 7 power-show-off
+#coat of the skull, unique-3: 1994 hp, 618 bsr, 1800 bdr, 479 dmg, 1 str, 1 int, 1 energy, 5 percent-dmg, 3 powers
+#high commander's armor, unique-3: 2991 hp, 349 chr, 349 bsr, 1 str, 1 energy, 1 int, 1 fight, 1 speed, 1 dur, 1777 cdr, 3 powers
+diamond tipped stilettos, unique-4: 535 dmg, 404 chr, 1350 cdr, 2791 hp, 610 def, 1 fight, 8.6 aspd, 3 powers, 7 power-spin-kick, 7 power-sig
+mask of the goat, unique-5: 642 dmg, 618 chr, 2070 cdr, 2591 hp, 3 powers
+locket of the lords cardinal, unique-5: 513 dmg, 2591 hp, 484 chr, 1619 cdr, 3 powers, 7 powers_hellfire, 7 power-sig, 7 power-show-off
+gok, arti: 273 chr, 273 bsr, 859 cdr, 859 bdr
+fist, arti: 2 str, 700 cdr, 700 bdr, 8 aspd
+eyepatch, arti: 950 hp, 1134 def, 531 dmg
+swgn, arti: 429 chr_phys, 512 def, 620 dmg_phys
+agamotto, arti: 316 dmg_mental, 10 percent-def, 230 def, 6 aspd, 1 powers
+#quiox, arti: 10 percent-def, 339 def
+#hellfang, arti: 1038 def, 2 dur
+#wsj, arti: 604 def, 2009 hp, 519 dmg
+brooch, arti: 505 dmg_melee, 421 dmg, 468 chr
+sinister, arti: 1 fight, 1 int, 1 energy, 928 cdr, 928 bdr
+hyde, arti: 349 dmg, 599 def, 1590 hp, 892 bdr, 271 bsr
+#nano, arti: 2 fight, 285 bsr, 798 bdr, 1 powers
+#acoc, arti: 136 bsr, 136 chr, 1 dur, 708 dmg_phys
+flag, arti: 669 cdr, 669 bdr, 8 aspd, 1 fight, 1 powers
+#ilas, arti: 7 int, 407 bsr, 2386 hp
+#hpp, arti: 1 fight, 265 bsr, 265 chr, 1325 hp, 8 aspd
+fury, arti: 743 cdr, 500 dmg_phys, 226 chr_ranged, 1 fight
+#mane, arti: 508 dmg, 600 chr
+task, arti: 236 dmg, 421 chr_melee, 421 chr_ranged, 378 def, 6 percent-dmg
+#atlantean, arti: 436 chr_melee, 1045 def
+emma base stats, stats: 5 dur, 5 str, 3 fight, 3 speed, 6 energy, 5 int, 7438 hp
+#skrull medal, medal: 319 bsr, 2 fight, 423 dmg, 1070 bdr
+#frag, unique-1: 1460 dmg, 2072 cdr, 2072 bdr, 2592 hp, 963 def, 482 chr, 482 bsr, 3 powers
+#hammer, unique-1: 1042 dmg, 484 chr, 1619 cdr, 6 percent-dmg, 707 dmg_phys, 707 dmg_energy, 1794 hp, 3 powers, 6 powers_melee
+#mzee, unique-2: 481 dmg, 4585 hp, 3 dur, 3 str, 2 powers, 2 powers_melee
+#darkhawk, unique-2: 3588 hp, 2 str, 2 energy, 2 speed, 618 bsr, 2070 bdr, 3 powers
+#x-men, unique-2: 641 dmg, 2 fight, 3588 hp, 9.3 aspd, 3 powers
+#skrull uniform, unique-4: 3588 hp, 618 bsr, 2070 bdr, 482 dmg, 1 str, 1 fight, 1 int, 3 powers
+#pet (def all), pet: 5 percent-def, 50 spirit, 10 percent-brut-dmg, 3 fight, 1 powers_area
