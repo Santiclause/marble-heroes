@@ -8,7 +8,7 @@ subterranea, relic: 1581 def, 1000 hp
 power doop (def phys/mental), uru: 800 def, 577 def, 4777 bdr
 xavier, ring: 1 int, 1 fight, 294 chr, 294 bsr, 1466 hp, 200 dmg, 1 powers
 costume flat, costume: 3972 cdr, 200 dmg
-rasputin (def cdr), insig: 280 dmg_melee, 1470 def, 1071 cdr, 1 powers
+#rasputin (def cdr), insig: 280 dmg_melee, 1470 def, 1071 cdr, 1 powers
 pet (def), pet: 5 percent-def, 50 spirit, 10 percent-brut-dmg, 3 fight, 2 powers_area
 ant-man, synergy: 1 str
 cable, synergy: 2 percent-crit
@@ -33,12 +33,12 @@ omega stats, omega: 18 dmg_phys, 6 chr_phys, 6 bsr_phys, 5 energy, 12 str, 60 bd
 white silk gauntlets, unique-1: 1112 dmg, 418 def, 9.3 aspd, 375 chr, 375 bsr, 1619 cdr, 1 fight, 3 powers, 7 powers_diamond, 7 power-diamond-crush, 7 power-true-queen
 rebel's black bodice, unique-2: 609 dmg, 104 spirit, 3988 hp, 1 fight, 643 def, 8.6 aspd, 3 powers, 7 power-diamond-mind, 7 power-telepathic-mastery
 kiss of the viper, unique-3: 3589 hp, 3 dur, 1 fight, 479 dmg_melee, 479 dmg_ranged, 400 chr_melee, 400 chr_ranged, 1596 def, 3 powers
-dark x-men jacket, unique-3: 609 dmg, 1 dur, 3389 hp, 537 bsr, 1800 bdr, 1 fight, 6 percent-dmg, 3 powers, 7 power-inspire, 7 power-show-off
+#dark x-men jacket, unique-3: 609 dmg, 1 dur, 3389 hp, 537 bsr, 1800 bdr, 1 fight, 6 percent-dmg, 3 powers, 7 power-inspire, 7 power-show-off
 #coat of the skull, unique-3: 1994 hp, 618 bsr, 1800 bdr, 479 dmg, 1 str, 1 int, 1 energy, 5 percent-dmg, 3 powers
 #high commander's armor, unique-3: 2991 hp, 349 chr, 349 bsr, 1 str, 1 energy, 1 int, 1 fight, 1 speed, 1 dur, 1777 cdr, 3 powers
 diamond tipped stilettos, unique-4: 535 dmg, 404 chr, 1350 cdr, 2791 hp, 610 def, 1 fight, 8.6 aspd, 3 powers, 7 power-spin-kick, 7 power-sig
 mask of the goat, unique-5: 642 dmg, 618 chr, 2070 cdr, 2591 hp, 3 powers
-locket of the lords cardinal, unique-5: 513 dmg, 2591 hp, 484 chr, 1619 cdr, 3 powers, 7 powers_hellfire, 7 power-sig, 7 power-show-off
+#locket of the lords cardinal, unique-5: 513 dmg, 2591 hp, 484 chr, 1619 cdr, 3 powers, 7 powers_hellfire, 7 power-sig, 7 power-show-off
 gok, arti: 273 chr, 273 bsr, 859 cdr, 859 bdr
 fist, arti: 2 str, 700 cdr, 700 bdr, 8 aspd
 eyepatch, arti: 950 hp, 1134 def, 531 dmg
@@ -67,4 +67,8 @@ emma base stats, stats: 5 dur, 5 str, 3 fight, 3 speed, 6 energy, 5 int, 7438 hp
 #darkhawk, unique-2: 3588 hp, 2 str, 2 energy, 2 speed, 618 bsr, 2070 bdr, 3 powers
 #x-men, unique-2: 641 dmg, 2 fight, 3588 hp, 9.3 aspd, 3 powers
 #skrull uniform, unique-4: 3588 hp, 618 bsr, 2070 bdr, 482 dmg, 1 str, 1 fight, 1 int, 3 powers
-#pet (def all), pet: 5 percent-def, 50 spirit, 10 percent-brut-dmg, 3 fight, 1 powers_area
+#pet (def all), pet: 5 percent-def, 50 spirit, 10 percent-brut-dmg, 3 fight, 1 powers
+cyclops (def cdr), insig: 1426 def, 1401 cdr, 1 powers, 132 dmg, 330 bdr
+#mockingbird (def cdr), insig: 1323 def, 1071 cdr, 1 powers, 9.1 aspd
+#grenade, arti: 1000 bsr_area, 800 chr_area
+#jinn, unique-5: 1180 dmg, 321 dmg_ranged, 321 dmg_area, 269 chr, 900 cdr, 1994 hp, 5 energy, 2 powers, 2 powers_ranged, 2 powers_area
