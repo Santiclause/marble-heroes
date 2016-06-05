@@ -1,9 +1,18 @@
 torment: mental ranged area telepath aspd;;0 0 732 8 8 0.5;9
 inspire: mental ranged area hellfire;;12774 19161 1901 10 30 0;20
-sig: mental area hellfire crit;;42057 63086 0 0 30 3;20
+#sig: mental area hellfire signature crit;;42057 63086 0 0 30 3;20
+sig: mental area hellfire signature;;70095 105143 0 0 30 3;20
 telepathic mastery: hellfire passive;171 17.1 dmg, 518 15.8 chr, 963 24.3 cdr;;20
 diamond mind: diamond passive;540 54 def, 25 0 percent-def;;20
 show off: phys melee area diamond;216 21.6 def;6835 10253 0 0 8 0.5;20
 true queen: phys melee diamond;;5754 8631 0 0 4 0;20
-spin kick: phys melee aspd area diamond;;3575 5363 858 8 8 0.769231;20
+spin kick: phys melee area aspd diamond;;3575 5363 858 8 8 0.769231;20
 diamond crush: phys melee diamond aspd_period filler;;4471 6707 0 0 0.769231 0;20
+#hurrlwind: phys melee area diamond filler aspd_channel;;1022 1533 0 0 0.25 0;20
+#sudden dread: telepath mental ranged area aspd;;2672 4008 659 8 8 0.7142757; 20
+#torment: mental ranged area telepath aspd;10 0 vuln;0 0 732 8 8 0.5;20
+#astral whip: mental ranged area telepath;25 0 extravuln_mental;7585 11378 0 0 8 0;20
+#psychic spear: mental ranged telepath;;5907 8861 0 0 4 0;20
+#drain psyche: mental ranged telepath filler aspd_channel;20 0 selfdmg-drain-psyche;0 0 1475 2 1 0;20
+#psi bolt: mental ranged area telepath filler aspd_period;;2928 4392 0 0 0.5 0;20
+#psychic blast: mental ranged area telepath filler aspd_channel;;1271 1907 0 0 0.25 0;20

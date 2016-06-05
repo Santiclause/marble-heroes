@@ -38,8 +38,12 @@ class Skill(object):
         x = self.dps
         dps = ((x['dmg_min'] + x['dmg_max'])/2 + x['dot']*x['dot_duration']*2)/x['period']
         dps *= calculate_multiplier(stats, self.tags)
+        dps_mod = 1 + stats['selfdmg-' + self.name.replace(' ', '-')]/100
         if 'aspd_period' in self.tags:
             dps *= 1 + calculate_aspd(stats.get('aspd', 0))
+        if 'aspd_channel' in self.tags:
+            dps_mod += calculate_aspd(stats['aspd'])
+        dps *= dps_mod
         if filler_dps:
             anim = x['anim_time']
             if 'aspd' in self.tags:
@@ -57,7 +61,7 @@ class EmmaSkill(Skill):
         if 'diamond' in self.tags:
             defense = stats.get('def', 0)
             def_percent = stats['percent-def'] + stats['dur']*2
-            dps *= 1 + defense*(def_percent + 100)/(100*100*250)
+            dps *= 1 + defense*(def_percent + 100)/(100*100*500)
         if filler_dps:
             x = self.dps
             anim = x['anim_time']
@@ -128,16 +132,25 @@ def get_stat(stats, tags, stat):
 
 def parse_item(line):
     line = line.strip()
-    if line[0] == "#":
+    require_this = False
+    if not line or line[0] == "#":
         return None
+    if line[0] == "!":
+        line = line[1:]
+        require_this = True
     info, stats = line.split(": ", 1)
     name, category = info.split(", ", 1)
     stats = dict((x[1], float(x[0])) for x in map(lambda s: s.split(" ", 1), stats.split(", ")))
     #return (name, category, stats)
-    return Item(name, category, stats)
+    i = Item(name, category, stats)
+    if require_this:
+        required.append(i)
+    return i
 
 def parse_skill(line, dps_header="dmg_min dmg_max dot dot_duration period anim_time".split(' ')):
     line = line.strip()
+    if not line or line[0] == "#":
+        return None
     name, info = line.split(': ')
     tags, stats_string, dps_string, ranks = info.split(';')
     tags = tags.split(' ')
@@ -169,13 +182,13 @@ def print_items(item_list):
     for cat in items:
         if len(items[cat]) <= limits[cat]:
             x.pop(cat)
-    for key in sorted(x.keys()):
-        print "{:15}{}".format(key, ", ".join(y.name for y in x[key]))
+    return "\n".join("{:15}{}".format(key, ", ".join(y.name for y in x[key])) for key in sorted(x.keys()))
 
 
 def result_filter(results, contains=[], excludes=[]):
     return list(r for r in results if all(c in r[1] for c in contains) and not any(e in r[1] for e in excludes))
 
+required = []
 with open('marble items.txt', 'r') as f:
     limits = dict((x[0], int(x[1])) for x in itertools.imap(lambda s: s.split(" "), f.readline().strip().split(", ")))
     items = collections.defaultdict(list)
@@ -189,6 +202,8 @@ with open('marble items.txt', 'r') as f:
         items[item.category].append(item)
 with open('emma skills.txt', 'r') as f:
     skills = map(parse_skill, f)
+    while None in skills:
+        skills.remove(None)
 
 def first_artis(results, artis=len(items['arti'])):
     first_arti = collections.defaultdict(lambda: 15504)
@@ -221,12 +236,23 @@ def check():
             prod *= nCr(l, limits[cat])
     return prod
 
+def fancy(results, n):
+    for x in range(n+1):
+        s = "    {:10.2f} DPS || ".format(results[x][0])
+        lines = print_items(results[x][1]).split('\n')
+        s += lines.pop(0)
+        while lines:
+            s += "\n" + 19*' ' + "|| " + lines.pop(0)
+        print s
+
 print "This will take {} iterations.".format(check())
 highest = (None, 0)
 counter = 0
 results = []
 for i in itertools.product(*(itertools.combinations(items[cat], limits[cat]) for cat in items)):
     item_list = list(itertools.chain.from_iterable(i))
+    if required and not all(i in item_list for i in required):
+        continue
     stats = calculate_stats(item_list, skills)
     dps = calculate_skills(stats, skills)
     x = sum(v[1] for v in dps.values())
